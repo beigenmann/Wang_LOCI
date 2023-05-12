@@ -1,9 +1,9 @@
 from array import *
 import math
 
- 
+ #Wang LOCI - Rechnen mit Logarithmen
 
-
+# Der LOCI enthält also im Speicher die natürlichen Logarithmen dieser Werte
 T = [[0.1, -math.log(0.1)], 
     [2,  -math.log(2)], 
     [0.9,  -math.log(0.9)], 
@@ -26,17 +26,11 @@ for x in T:
             print( calc ," *" , x[0], " =",  calc * x[0], " ", x[1] )
             calc = calc * x[0]
             sum = sum + x[1]
-            
-            #print("< 1", x, " " , calc , " " , sum)
-            
     else:
         while calc > 1:
             print( calc ," *" , x[0], " =",  calc * x[0], " ", x[1] )
             calc = calc * x[0]
             sum = sum + x[1]
-            
-            #print("> 1", x, " " ,calc , " " , sum)
- 
 print(sum)
 
 
